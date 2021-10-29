@@ -78,21 +78,20 @@ html {
 }
 
 .header-left{
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
     padding:5px ;
-    margin-left: 20px;
+    margin: 0 20px;
     
     
 }
 
 .title-container{
     display: inline-block;
-    position: relative;
+   vertical-align: middle;
     text-align: center;
-    top: -45px;
-    left: -20px;
     transition: 1s;
-    padding: 20px 80px;
+    margin: 35px 20px;
 }
 
 
@@ -105,12 +104,19 @@ html {
     min-width: 300px;
 } */
 
+.logo-container{
+    display: block;
+    width: 145px;
+    height: 145px;
+    padding: 5px;
+}
+
 a.logo{
     display: inline-block;
     background-color: #5E6572 ;
     border-radius: 50%;
     position: relative;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     height: 140px;
     width: 140px;
@@ -168,24 +174,27 @@ a:hover.logo svg:nth-child(3){
 h1.title,
 p.sub-title {
     text-transform: uppercase;
+    margin: 0;
 }
 
 h1.title a{
     color: #e9a85d;
     text-decoration: none;
+    text-align: center;
     width: 600px;
-    margin-left: 20px;
-    margin-bottom: 5px;
-    padding:5px 30px;
-    border-bottom: 2px solid #A9B4C2;
+    border-bottom: 5px solid #A9B4C2;
 }
 
 p.sub-title{
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     font-size: 10px;
-    font-weight: 600;
+    font-weight: 700;
     color: #4b515c;
-    margin:10px auto;
+    margin: 0;
+    margin-top: 5px;
+    border-top: 5px solid #e9a85d;
+    padding: 0;
+    padding-top: 5px;
 }
 
 .photo-box-title,
@@ -214,6 +223,10 @@ a.footer-nav-link:hover,
 .title a:hover{
     transform:scale(1.5) ;
     color: #eae9f2 ;
+}
+
+.title a:hover{
+    
 }
 
 h1 a{
@@ -335,21 +348,15 @@ form.sign-up{
 img.photo{
     position: relative;
    display: inline-block;
-   margin: 45px;
-   padding: 20px;
-   max-width: 450px;     
+   margin: 15px 10px;
+   max-width: 450px;
+   box-shadow: 0 0 10px #5E6572;     
 }
 
-.photo-box,
-.photo-box-title{
-    background-color: #eae9f2;
-    padding: 10px 20px;
-    border-radius: 40px 40px 40px 40px/40px 40px 40px 40px;
-}
 .photo-box a,
 .photo-box-title a,
 a.box-sub-title{
-    color: #1C2321;
+    color: #eae9f2;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -368,12 +375,10 @@ a:hover.box-sub-title{
 }
 
 .photo-box {
-    
     min-width:600px ;
     display: block;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    border: 5px solid #eae9f2;
+    background-color: #eae9f2;
+    padding: 15px 10px;
 }
 
 .video-item{
